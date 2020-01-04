@@ -1,26 +1,45 @@
-Age Started
-Retirement Tax Bracket
-Working Tax Bracket
-Avg Realized gain/yr
-Retirement Age
-Retirement Withdrawal
-RRSP Bonus Contribution
-Initial
+<div id="top">
 <form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
-  <label>
-    <span>Income:</span>
+  <div>
+    <label>Income:</label>
     <input type="text" formControlName="firstName">
-  </label>
-  <br>
-  <label>
-      Contribution/yr:
-      <input type="text" formControlName="lastName">
-  </label>
-  <br>
-  <label>
-      Gains Expected (%):
-      <input type="text" formControlName="age">
-    </label>
-  <br>
+  </div>
+  <div>
+    <label>Contribution/yr:</label>
+    <input type="text" formControlName="lastName">
+  </div>
+  <div>
+    <label> Gains Expected (%):</label>
+    <input type="text" formControlName="age">
+  </div>
+  <div>
+    <label>Age Started:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>Retirement Tax Bracket:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>Working Tax Bracket:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>Avg Realized gain/yr:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>Retirement Age:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>Retirement Withdrawal:</label>
+    <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label>RRSP Bonus Contribution:</label>
+    <input type="text" formControlName="firstName">
+  </div>
   <button type="submit">Generate Graphs</button>
 </form>
+</div>
