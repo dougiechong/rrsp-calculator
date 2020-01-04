@@ -1,0 +1,26 @@
+Age Started
+Retirement Tax Bracket
+Working Tax Bracket
+Avg Realized gain/yr
+Retirement Age
+Retirement Withdrawal
+RRSP Bonus Contribution
+Initial
+<form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
+  <label>
+    <span>Income:</span>
+    <input type="text" formControlName="firstName">
+  </label>
+  <br>
+  <label>
+      Contribution/yr:
+      <input type="text" formControlName="lastName">
+  </label>
+  <br>
+  <label>
+      Gains Expected (%):
+      <input type="text" formControlName="age">
+    </label>
+  <br>
+  <button type="submit">Generate Graphs</button>
+</form>
