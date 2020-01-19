@@ -6,15 +6,25 @@
     <th>+Contributions</th>
     <th>Gains</th>
     <th>+Gains</th>
+    <th>riff_min</th>
+    <th>Retirement Withdrawal</th>
+    <th>-Withdrawal</th>
+    <th>Tax</th>
+    <th>-Tax</th>
     </thead>
     <tbody>
         <tr *ngFor="let p of receivedParentMessage">
             <td>{{p.age}}</td>
-            <td>{{p.p_value}}</td>
+            <td>{{p.pValue}}</td>
             <td>{{p.contributions}}</td>
-            <td>{{p.p_value2}}</td>
+            <td>{{p.pValue2}}</td>
             <td>{{p.gains}}</td>
-            <td>{{p.p_value3}}</td>
+            <td>{{p.pValue3}}</td>
+            <td>{{p.riffMin}}</td>
+            <td>{{p.withdrawal}}</td>
+            <td>{{p.pValue4}}</td>
+            <td>{{p.tax}}</td>
+            <td>{{p.pValue5}}</td>
         </tr>
     </tbody>
 </table>
