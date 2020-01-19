@@ -4,8 +4,8 @@
     <th>Portfolio Value</th>
     <th>Contributions</th>
     <th>+Contributions</th>
-    <th>Price</th>
-    <th>Stock</th>
+    <th>Gains</th>
+    <th>+Gains</th>
     </thead>
     <tbody>
         <tr *ngFor="let p of receivedParentMessage">
@@ -13,6 +13,8 @@
             <td>{{p.p_value}}</td>
             <td>{{p.contributions}}</td>
             <td>{{p.p_value2}}</td>
+            <td>{{p.gains}}</td>
+            <td>{{p.p_value3}}</td>
         </tr>
     </tbody>
 </table>
