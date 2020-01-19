@@ -1,5 +1,5 @@
 <div id="top">
-<form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
+<form [formGroup]="inputs" (ngSubmit)="onSubmit()">
   <div>
     <label>Income:</label>
     <input type="number" formControlName="income">
@@ -14,32 +14,31 @@
   </div>
   <div>
     <label>Age Started:</label>
-    <input type="text" formControlName="ageStarted">
+    <input type="number" formControlName="ageStarted">
   </div>
   <div>
     <label>Retirement Tax Bracket:</label>
-    <input type="text" formControlName="retirementBracket">
+    <input type="number" formControlName="retirementBracket">
   </div>
   <div>
     <label>Working Tax Bracket:</label>
-    <input type="text" formControlName="workingTaxBracket">
+    <input type="number" formControlName="workingTaxBracket">
   </div>
   <div>
     <label>Avg Realized gain/yr:</label>
-    <input type="text" formControlName="avgRealizedGains">
+    <input type="number" formControlName="avgRealizedGains">
   </div>
   <div>
     <label>Retirement Age:</label>
-    <input type="text" formControlName="ageRetirement">
+    <input type="number" formControlName="ageRetirement">
   </div>
   <div>
     <label>Retirement Withdrawal:</label>
-    <input type="text" formControlName="retirementWithdrawal">
-  </div>
-  <div>
-    <label>RRSP Bonus Contribution:</label>
-    <input type="text" formControlName="rrspBonus">
+    <input type="number" formControlName="retirementWithdrawal">
   </div>
   <button type="submit">Generate Graphs</button>
 </form>
 </div>
+<table>
+  <tr>one</tr>
+</table>

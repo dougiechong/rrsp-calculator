@@ -1,3 +1,5 @@
 
-<app-form></app-form>
+<app-form (valueChange)='clickTest($event)'></app-form>
+<app-table [receivedParentMessage]="messageToSendP"></app-table>
+<button (click)='clickTest()'>click</button>
 <router-outlet></router-outlet>

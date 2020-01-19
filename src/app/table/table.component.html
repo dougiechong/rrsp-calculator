@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+    <th>Age</th>
+    <th>Portfolio Value</th>
+    <th>Contributions</th>
+    <th>+Contributions</th>
+    <th>Price</th>
+    <th>Stock</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of receivedParentMessage">
+            <td>{{p.age}}</td>
+            <td>{{p.p_value}}</td>
+            <td>{{p.contributions}}</td>
+            <td>{{p.p_value2}}</td>
+        </tr>
+    </tbody>
+</table>

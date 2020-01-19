@@ -1,15 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {FormComponent} from './form/form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        ReactiveFormsModule,
+        FormsModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        FormComponent
       ],
     }).compileComponents();
   }));
@@ -30,6 +36,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('rrsp-calculator app is running!');
+    expect(compiled.querySelector('button').textContent).toContain('Generate Graphs');
   });
 });
